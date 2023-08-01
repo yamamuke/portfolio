@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keisuke Yamamura's portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="山村恵祐 ポートフォリオ">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <div class="container mt-5 py-5">
+                <div class="row mt-5">
+                <!--左側-->
+                <div class="col-md-6">
+                    <img src="images/Jumping_In_Penang.jpg">
+                </div>
+            
+                <!--右側-->
+                <div class="col-md-6 px-5">
+                    <p class="name"><ruby>山村恵祐<rt>やまむらけいすけ</rt></ruby></h2>
+                    <p class="title">住所</p>
+                    <p>東京都新宿区在住</p>
+                    <p class="title">年齢</p>
+                    <p>51歳</p>
+                    <p class="title">GitHub Account</p>
+                    <p>yamamukeisuke@gmail.com</p>
+                </div>              
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="portfolio.html" data-toggle="tab">ポートフォリオ</a></li>
+                <li class="nav-item"><a class="nav-link" href="study.html" data-toggle="tab">学習状況</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#career" data-toggle="tab">経歴</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="qualification.html" data-toggle="tab">資格</a></li>
+                <li class="nav-item"><a class="nav-link" href="self_pr.html" data-toggle="tab">自己紹介</a></li>
+            </ul>
+            <ul class="nav nav-tabs my-3">
+                <li class="nav-link"><a href="timekeeper.html" data-toggle="tab">作業時間記録アプリ(Rails)</a></li>
+                <li class="nav-link"><a href="french_conjugaison.html" data-toggle="tab">フランス語動詞活用習得アプリ(JavaScript)</a></li>
+                <li class="nav-link"><a href="tips_management.html" data-toggle="tab">Tips管理アプリ(Laravel)</a></li>
+            </ul>
+
+            <div class="mt-3">
+                <h1 class="h3">Tips管理用アプリ(Laravel)</h1>
+                <a href="https://tips-management.herokuapp.com/">https://tips-management.herokuapp.com/</a>
+                <p>テストログイン用メールアドレス : test@example.com</p>
+                <p>パスワード :  password</p>
+                <p>Github : <a href="https://github.com/yamamuke/tips-management.git">https://github.com/yamamuke/tips-management.git</a></p>
+                
+                <h2 class="h5 bold"><作品の説明></h2>
+                <p>
+                    アプリ開発時に調査した情報を、後日すぐに引き出せるようにする目的のためLaravelで作成しました。
+                    初めて触れる技術のみならず、うろ覚えや忘れてしまった情報をGoogle検索することが多いですが、何度も同じサイトに行きつくことが多いので情報収集時間を短縮できないかと考えました。<br>
+                    また、公式ドキュメントやQiitaでも繰り返し同じ情報をページ内で探すことが多いので、自分にとって見やすいように簡易にまとめておくことで情報確認の時短を図りました。<br>
+                    当アプリを作成時にすでに作成に必要なTipsを保管するのに役立ちましたが、アプリ開発以外のTipsや語学学習のイディオム・ボキャブラリー保管等にも応用できると思います。
+                </p>
+                <h2 class="h5"><作成期間></h2>
+                <p>2023年3月～5月</p>
+                <p><アプリを作る際、工夫した点></p>
+                <p>以下の点で、利便性と使い勝手に配慮しました。</p>
+                <ol>
+                    <li>
+                        各記事にカテゴリーをタグ付けできるようにして、カテゴリー別に表示する検索機能を付けました。
+                    </li>
+                    <li>
+                        検索結果についてキーワード検索と更新日時による並び替えを連携、またカテゴリー検索と並び替えを連携させ、それぞれの機能を分離しました。
+                    </li>
+                    <li>
+                        Tips編集画面にはトップページと詳細表示ページの両方からアクセスできるようにして、編集を中止したときには直前の画面に戻るようにしました。
+                    </li>
+                    <li>
+                        カテゴリー検索のプルダウンや記事のカテゴリータグは探しやすいようにアルファベット順にしました
+                    </li>
+                    <li>
+                        カテゴリーの登録や編集はモーダル表示にして見やすさと効率化を考えました
+                    </li>
+                    <li>
+                        タブレットやスマートフォンで開いたときに見やすいレイアウトになるようにレスポンシブ対応をしました。
+                    </li>
+                </ol>               
+                                 
+            </div>
+            <img src="images/tips_management.png" class="mt-3">
+        </main>
+        <footer>&copy; 2023 Keisuke Yamamura.</footer>
+    </body>
+
+</html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Bootstrap:タブ切り替えの作成</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- <link rel="stylesheet" type="text/css" href="css/my-bootstrap.css"> -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  </head>
+<body>
+    
+<div class="container">   
+
+<h2>日本の都道府県</h2>
+
+<div class="height-m"></div>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#touhoku" data-toggle="tab">東北地方</a></li>
+  <li><a href="#kantou" data-toggle="tab">関東地方</a></li>
+  <li><a href="#chuubu" data-toggle="tab">中部地方</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="touhoku">
+    <p class="font-l">青森県・岩手県・宮城県・秋田県・山形県・福島県</p>
+  </div>
+  <div class="tab-pane" id="kantou">
+    <p class="font-l">茨城県・栃木県・群馬県・埼玉県・千葉県・東京都・神奈川県</p>
+  </div>
+  <div class="tab-pane" id="chuubu">
+    <p class="font-l">新潟県・富山県・石川県・福井県・山梨県・長野県・岐阜県・静岡県・愛知県</p>
+  </div>
+</div>
+
+<div class="height-m"></div>
+<div class="height-f-m"></div>
+<div class="height-m"></div>
+<div class="height-f-m"></div>
+
+<h2>日本の都道府県（＊フェード効果付きタブ切り替え）</h2>
+
+<div class="height-m"></div>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#touhoku2" data-toggle="tab">東北地方</a></li>
+  <li><a href="#kantou2" data-toggle="tab">関東地方</a></li>
+  <li><a href="#chuubu2" data-toggle="tab">中部地方</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="touhoku2">
+    <p class="font-l">青森県・岩手県・宮城県・秋田県・山形県・福島県</p>
+  </div>
+  <div class="tab-pane fade" id="kantou2">
+    <p class="font-l">茨城県・栃木県・群馬県・埼玉県・千葉県・東京都・神奈川県</p>
+  </div>
+  <div class="tab-pane fade" id="chuubu2">
+    <p class="font-l">新潟県・富山県・石川県・福井県・山梨県・長野県・岐阜県・静岡県・愛知県</p>
+  </div>
+</div>
+
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+

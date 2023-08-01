@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keisuke Yamamura's portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="山村恵祐 ポートフォリオ">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <div class="container mt-5 py-5">
+                <div class="row mt-5">
+                <!--左側-->
+                <div class="col-md-6">
+                    <img src="images/Jumping_In_Penang.jpg">
+                </div>
+            
+                <!--右側-->
+                <div class="col-md-6 px-5">
+                    <p class="name"><ruby>山村恵祐<rt>やまむらけいすけ</rt></ruby></h2>
+                    <p class="title">住所</p>
+                    <p>東京都新宿区在住</p>
+                    <p class="title">年齢</p>
+                    <p>51歳</p>
+                    <p class="title">GitHub Account</p>
+                    <p>yamamukeisuke@gmail.com</p>
+                </div>              
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="portfolio.html" data-toggle="tab">ポートフォリオ</a></li>
+                <li class="nav-item"><a class="nav-link" href="study.html" data-toggle="tab">学習状況</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#career" data-toggle="tab">経歴</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="qualification.html" data-toggle="tab">資格</a></li>
+                <li class="nav-item"><a class="nav-link" href="self_pr.html" data-toggle="tab">自己紹介</a></li>
+            </ul>
+            <ul class="nav nav-tabs my-3">
+                <li class="nav-link"><a href="timekeeper.html" data-toggle="tab">作業時間記録アプリ(Rails)</a></li>
+                <li class="nav-link"><a href="french_conjugaison.html" data-toggle="tab">フランス語動詞活用習得アプリ(JavaScript)</a></li>
+                <li class="nav-link"><a href="tips_management.html" data-toggle="tab">Tips管理アプリ(Laravel)</a></li>
+            </ul>
+
+            <div class="mt-3">
+                <h1 class="h3">フランス語の動詞活用学習アプリ(JavaScript)</h1>
+                <a href="https://yamamuke.github.io/FrancaisApp/">https://yamamuke.github.io/FrancaisApp/</a>
+                <p>（ユーザー認証なし）</p>
+                <p>Github : <a href="https://github.com/yamamuke/FrancaisApp.git">https://github.com/yamamuke/FrancaisApp.git</a></p>
+                
+                <h2 class="h5"><作品の説明></h2>
+                <p>
+                    複雑なフランス語の動詞活用の全パターンを頻出語の例でゲームをしながら身につけるためのアプリとして、JavaScriptで作成しました。
+                </p>
+                <h2 class="h5"><作成期間></h2>
+                <p>2022年9月</p>
+                <p><アプリを作る際、工夫した点></p>
+                <ol>
+                    <li>
+                        時制、法、主語の違いにより分岐が多く、解答があまり複雑になりすぎないように男性形、単数などに的を絞りました
+                    </li>
+                    <li>
+                        window.globalFunctionを利用してメインのJavaScriptコードと正解データを格納する関数用のファイルを分割しました。
+                    </li>
+                    <li>
+                        出題時と解答時のメリハリをつけるために、フェードイン・フェードアウトを活用しました。
+                    </li>
+                </ol>               
+                                 
+            </div>
+            <img src="images/conjugaison1.png" class="mt-3">
+            <img src="images/conjugaison2.png" class="mt-3">
+        </main>
+        <footer>&copy; 2023 Keisuke Yamamura.</footer>
+    </body>
+
+</html>

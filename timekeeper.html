@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keisuke Yamamura's portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="山村恵祐 ポートフォリオ">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <div class="container mt-5 py-5">
+                <div class="row mt-5">
+                <!--左側-->
+                <div class="col-md-6">
+                    <img src="images/Jumping_In_Penang.jpg">
+                </div>
+            
+                <!--右側-->
+                <div class="col-md-6 px-5">
+                    <p class="name"><ruby>山村恵祐<rt>やまむらけいすけ</rt></ruby></h2>
+                    <p class="title">住所</p>
+                    <p>東京都新宿区在住</p>
+                    <p class="title">年齢</p>
+                    <p>51歳</p>
+                    <p class="title">GitHub Account</p>
+                    <p>yamamukeisuke@gmail.com</p>
+                </div>              
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="portfolio.html" data-toggle="tab">ポートフォリオ</a></li>
+                <li class="nav-item"><a class="nav-link" href="study.html" data-toggle="tab">学習状況</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#career" data-toggle="tab">経歴</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="qualification.html" data-toggle="tab">資格</a></li>
+                <li class="nav-item"><a class="nav-link" href="self_pr.html" data-toggle="tab">自己紹介</a></li>
+            </ul>
+            <ul class="nav nav-tabs my-3">
+                <li class="nav-link"><a href="timekeeper.html" data-toggle="tab">作業時間記録アプリ(Rails)</a></li>
+                <li class="nav-link"><a href="french_conjugaison.html" data-toggle="tab">フランス語動詞活用習得アプリ(JavaScript)</a></li>
+                <li class="nav-link"><a href="tips_management.html" data-toggle="tab">Tips管理アプリ(Laravel)</a></li>
+            </ul>
+
+            <div class="mt-3">
+                <h1 class="h3">学習時間、作業時間記録アプリ(Ruby on Rails)</h1>
+                <a href="https://time-recording.herokuapp.com/">https://time-recording.herokuapp.com/</a>
+                <p>テストログイン用メールアドレス : test@example.com</p>
+                <p>パスワード : Password</p>
+                <p>Github : <a href="https://github.com/yamamuke/Timekeeper.git">https://github.com/yamamuke/Timekeeper.git</a></p>
+                
+                <h2 class="h5 bold"><作品の説明></h2>
+                <p>
+                    学習時間や作業時間を記録するためのアプリで、Ruby on Railsで作成しました。日々の学習や自己開発の内容と時間を記録することによって、達成感を感じたり励みにしたりすることができると思い作成しました。
+                    また、カテゴリーごと、日ごと、月ごとの作業時間集計ができるので業務時間を計算する場合にも役立つと思います。
+                </p>
+                <h2 class="h5"><作成期間></h2>
+                <p>2022年7月 ～8月</p>
+                <p><アプリを作る際、工夫した点></p>
+                <ol>
+                    <li>
+                        アイテム作成時と作業終了時に最低限の入力で済むように開始時間と終了時間について自動取得するようにしました。
+                    </li>
+                    <li>
+                        学習時間が日をまたぐときに、開始した日のページに記録するようにしました。
+                    </li>
+                    <li>
+                        学習や作業を停止した後、同じ内容の案件を開始するときの手間を減らすことに苦心しました。
+                        解決方法 → resumeという名前のアクションをコントローラに、「再開」ボタンをビューに追加し、クエリパラメータでタイトルやカテゴリーの内容を引き継いでボタンのクリックで作業を再開できるようにしました。
+                    </li>
+                    <li>
+                        以下のリファクタリングを行いました。
+                        <ul>
+                            <li>
+                                開発環境ではSQLiteを使用しているため、Herokuにデプロイするときに、PostgresQL用のコードに一部書き換える必要があります。Datetime型オブジェクト検索時の共通のメソッドをつくり１行の編集で済むようにして、開発とデプロイの切り替え作業を効率化しました。
+                            </li>
+                            <li>
+                                Datetime型オブジェクトからビューに時間表示するための計算プロセスで同じコードを繰り返していたためメソッド化してコードを短縮しました。
+                            </li>
+                        </ul>                        
+                    </li>
+                </ol>               
+                                 
+            </div>
+            <img src="images/timekeeper.png"  class="mt-3">
+        </main>
+        <footer>&copy; 2023 Keisuke Yamamura.</footer>
+    </body>
+
+</html>
