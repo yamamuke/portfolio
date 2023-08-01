@@ -33,3 +33,6 @@ footer {
 .bold {
   font-weight: bold;
 }
+.colored_title {
+  background-color: azure;
+}
